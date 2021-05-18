@@ -1,0 +1,130 @@
+{
+  "main": {
+    "id": "41f4a818eb89c6ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "628d82e6efc1a772",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Base/Variables.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b2aa6f7762ad0237",
+    "type": "split",
+    "children": [
+      {
+        "id": "d75c4bbdbe250137",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f373a316946afbe4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "de39c9103d01f32f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6f563a96d032b35a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "63ba07b43484d8be",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d22077327b3d5b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47a1c4c69004e258",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Base/Variables.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d977c4f5d5729d95",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "98d1ace2a96ece2f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Base/Variables.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "628d82e6efc1a772",
+  "lastOpenFiles": [
+    "Base/Variables.md",
+    "Base/Operators.md",
+    "Base/Methods.md",
+    "Base/Amongus Chess.md",
+    "Base/Blocks.md",
+    "Base/Data Types.md",
+    "Base/Literals.md",
+    "Base/Comments.md",
+    "Base/Циклы.md",
+    "README.md"
+  ]
+}
