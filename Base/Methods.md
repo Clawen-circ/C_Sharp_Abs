@@ -17,7 +17,7 @@ Console.WriteLine("Hello Ahmed");
 Console.WriteLine("Temperature on {0:D} is {1}°C.", DateTime.Today, 23.4);
 ```
 Методы из других классов, допустим math, вызываются с помощью названия класса и метода, через точку от него 
-```cshatrp
+```csharp
 r = Math.Sqrt(area / 3.1416);
 ```
 
