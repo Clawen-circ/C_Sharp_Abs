@@ -45,8 +45,7 @@ class Use_byte {
 ```csharp
 // Определить радиус окружности по площади круга.
 using System;
-class FindRadius 
-{
+class FindRadius {
 	static void Main() 
 	{
 		Double r;
@@ -63,8 +62,7 @@ class FindRadius
 ```csharp
 // Использовать тип decimal для расчета скидки.
 using System;
-class UseDecimal 
-{
+class UseDecimal {
 	static void Main() 
 	{
 		decimal price;
@@ -86,8 +84,7 @@ class UseDecimal
 капиталовложений.
 */
 using System;
-class FutVal 
-{
+class FutVal {
 	static void Main() 
 	{
 		decimal amount;
@@ -99,8 +96,7 @@ class FutVal
 		Console.WriteLine("Первоначальные капиталовложения: $" + amount);
 		Console.WriteLine("Норма прибыли: " + rate_of_return);
 		Console.WriteLine("В течение " + years + " лет");
-		for(i = 0; i < years; i++) 
-		{
+		for(i = 0; i < years; i++) {
 			amount = amount + (amount * rate_of_return);
 			Console.WriteLine("Будущая стоимость равна $" + amount);
 		}
@@ -133,8 +129,7 @@ ch = 88; // ошибка, не выйдет
 ```csharp
 // Продемонстрировать применение типа bool.
 using System;
-class BoolDemo 
-{
+class BoolDemo {
 	static void Main() 
 	{
 		bool b;
@@ -174,8 +169,7 @@ f = i; // присвоить целое значение переменной т
 ```charp 
 // Продемонстрировать неявное преобразование типа long в тип double.
 using System;
-class LtoD 
-{
+class LtoD {
 	static void Main() 
 	{
 		long L;
@@ -190,8 +184,7 @@ class LtoD
 ```csharp 
 // *** Эта программа не может быть скомпилирована. ***
 using System;
-class LtoD 
-{
+class LtoD {
 	static void Main() 
 	{
 		long L;
@@ -218,8 +211,7 @@ z = (int) (х / у)
 ```csharp
 // Продемонстрировать приведение типов.
 using System;
-class CastDemo 
-{
+class CastDemo {
 	static void Main() 
 	{
 		double x, y;

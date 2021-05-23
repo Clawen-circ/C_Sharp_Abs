@@ -2,14 +2,11 @@
 В языке C#, для отделения частей программы друг от друга, используются блоки. Они обозначаются фигурными скобками:
 ```csharp
 using System; // точка с запятой указывает на конец оператора
-{
-	class Program
-	{
-		static void Main(string[] args)
-		{// начало блока
-			Console.WriteLine("Hello World!"); // оператор
-		}// конец блока
-	}
+class Program {
+	static void Main(string[] args)
+	{// начало блока
+		Console.WriteLine("Hello World!"); // оператор
+	}// конец блока
 }
 ```
 ## Local Links 

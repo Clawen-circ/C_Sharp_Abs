@@ -25,8 +25,7 @@ int Queue;
 ```csharp
 // Продемонстрировать динамическую инициализацию.
 using System;
-class DynInit 
-{
+class DynInit {
 	static void Main() 
 	{
 		// Длина сторон прямоугольного треугольника,
@@ -53,8 +52,7 @@ var Cost = 181457.123446642342645m
 ```csharp 
 // Продемонстрировать применение неявно типизированных переменных.
 using System;
-class ImplicitlyTypedVar 
-{
+class ImplicitlyTypedVar {
 	static void Main() 
 	{
 		/* Эти переменные типизированы неявно. Они отнесены
@@ -91,17 +89,16 @@ var s1 = 4.0, s2 = 5.0; // Ошибка!
 ```csharp
 // Продемонстрировать область действия кодового блока.
 using System;
-class ScopeDemo 
-{
+class ScopeDemo {
 	static void Main() 
 	{
 		int x; // Эта переменная доступна для всего кода внутри метода Main().
 		х = 10;
-		if(x == 10) { // начать новую область действия
-		int у = 20; // Эта переменная доступна только в данном кодовом блоке.
-		// Здесь доступны обе переменные, х и у.
-		Console.WriteLine("х и у: " + х + " " + у);
-		х = у * 2;
+		if (x == 10) {// начать новую область действия
+			int у = 20; // Эта переменная доступна только в данном кодовом блоке.
+			// Здесь доступны обе переменные, х и у.
+			Console.WriteLine("х и у: " + х + " " + у);
+			х = у * 2;
 		}
 		// у = 100; // Ошибка! Переменна у здесь недоступна.
 		// А переменная х здесь по-прежнему доступна.
@@ -113,13 +110,11 @@ class ScopeDemo
 ```csharp
 // Продемонстрировать время существования переменной.
 using System;
-class VarInitDemo 
-{
+class VarInitDemo {
 	static void Main() 
 	{
 		int x;
-		for(x = 0; x < 3; x++) 
-		{
+		for(x = 0; x < 3; x++) {
 			int у = -1; // Переменная у инициализируется при каждом входе  в блок.
 			Console.WriteLine("у равно: " + у); // Здесь всегда выводится -1
 			у = 100;
@@ -138,20 +133,17 @@ class VarInitDemo
 *** Эта программа не может быть скомпилирована. ***
 */
 using System;
-class NestVar 
-{
+class NestVar {
 	static void Main() 
 	{
 		int count;
-		for (count = 0; count < 10; count = count+1) 
-		{
+		for (count = 0; count < 10; count = count+1) {
 			Console.WriteLine("Это подсчет: " + count);
 		}
 		
 		int count; // Недопустимо!!!
 		
-		for(count = 0; count < 2; count++) 
-		{
+		for(count = 0; count < 2; count++) {
 			Console.WriteLine("В этой программе есть ошибка!");
 		}
 	}

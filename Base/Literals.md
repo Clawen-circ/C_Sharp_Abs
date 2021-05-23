@@ -25,8 +25,7 @@ Console.Writeline("Cmon lets go")
 // Продемонстрировать применение управляющих
 // последовательностей символов в строковых литералах.
 using System;
-class StrDemo 
-{
+class StrDemo {
 	static void Main() 
 	{
 		Console.WriteLine("Первая строка\nВторая строка\nТретья строка");
@@ -41,8 +40,7 @@ class StrDemo
 ```csharp 
 // Продемонстрировать применение буквальных строковых литералов.
 using System;
-class Verbatim 
-{
+class Verbatim {
 	static void Main() 
 	{
 		Console.WriteLine(@"Это буквальный
