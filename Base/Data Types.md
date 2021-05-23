@@ -8,16 +8,18 @@
 ```csharp
 // Вычислить расстояние от Земли до Солнца в дюймах.
 using System;
-class Inches {
-static void Main() {
-long inches;
-long miles;
-miles = 93000000; // 93 000 000 миль до Солнца
-// 5 280 футов в миле, 12 дюймов в футе,
-inches = miles * 5280 * 12;
-Console.WriteLine("Расстояние до Солнца: " +
-inches + " дюймов.");
-}
+class Inches 
+{
+	static void Main() 
+	{
+		long inches;
+		long miles;
+		miles = 93000000; // 93 000 000 миль до Солнца
+		// 5 280 футов в миле, 12 дюймов в футе,
+		inches = miles * 5280 * 12;
+		Console.WriteLine("Расстояние до Солнца: " +
+		inches + " дюймов.");
+	}
 }
 ```
 Пример использования типа byte:
@@ -25,14 +27,16 @@ inches + " дюймов.");
 // Использовать тип byte.
 using System;
 class Use_byte {
-static void Main() {
-byte x;
-int sum;
-sum = 0;
-for(x = 1; х <= 100; х++)
-sum = sum + х;
-Console.WriteLine("Сумма чисел от 1 до 100 равна " + sum);
-}
+	static void Main() 
+	{
+		byte x;
+		int sum;
+		sum = 0;
+		for(x = 1; х <= 100; х++) {
+			sum = sum + х;
+			Console.WriteLine("Сумма чисел от 1 до 100 равна " + sum);
+		}
+	}
 }
 ```
 ## С плавающей точкой
@@ -42,14 +46,16 @@ Console.WriteLine("Сумма чисел от 1 до 100 равна " + sum);
 ```csharp
 // Определить радиус окружности по площади круга.
 using System;
-class FindRadius {
-static void Main() {
-Double r;
-Double area;
-area = 10.0;
-r = Math.Sqrt(area / 3.1416);
-Console.WriteLine("Радиус равен " + r);
-}
+class FindRadius 
+{
+	static void Main() 
+	{
+		Double r;
+		Double area;
+		area = 10.0;
+		r = Math.Sqrt(area / 3.1416);
+		Console.WriteLine("Радиус равен " + r);
+	}
 }
 ```
 ## Десятичный тип данных
@@ -60,17 +66,17 @@ Console.WriteLine("Радиус равен " + r);
 using System;
 class UseDecimal 
 {
-static void Main() 
-{
-decimal price;
-decimal discount;
-decimal discounted_price;
-// Рассчитать цену со скидкой.
-price = 19.95m;
-discount = 0.15m; // норма скидки составляет 15%
-discounted_price = price - ( price * discount);
-Console.WriteLine("Цена со скидкой: $" + discounted_price);
-}
+	static void Main() 
+	{
+		decimal price;
+		decimal discount;
+		decimal discounted_price;
+		// Рассчитать цену со скидкой.
+		price = 19.95m;
+		discount = 0.15m; // норма скидки составляет 15%
+		discounted_price = price - ( price * discount);
+		Console.WriteLine("Цена со скидкой: $" + discounted_price);
+	}
 }
 ```
 Важным моментом является наличие суффикса __m__ в значениях decimal. Суффикс необходим, лишь если задаваемое значение – число с плавающей точкой (тогда это значение будет интерпритировано, как обычная числовая константа с плавающей точкой). Можно присвоить переменной типа decimal целочисленное значение без m.
@@ -81,21 +87,25 @@ Console.WriteLine("Цена со скидкой: $" + discounted_price);
 капиталовложений.
 */
 using System;
-class FutVal {
-static void Main() {
-decimal amount;
-decimal rate_of_return;
-int years, i;
-amount = 1000.0M;
-rate_of_return = 0.07M;
-years = 10;
-Console.WriteLine("Первоначальные капиталовложения: $" + amount);
-Console.WriteLine("Норма прибыли: " + rate_of_return);
-Console.WriteLine("В течение " + years + " лет");
-for(i = 0; i < years; i++)
-amount = amount + (amount * rate_of_return);
-Console.WriteLine("Будущая стоимость равна $" + amount);
-}
+class FutVal 
+{
+	static void Main() 
+	{
+		decimal amount;
+		decimal rate_of_return;
+		int years, i;
+		amount = 1000.0M;
+		rate_of_return = 0.07M;
+		years = 10;
+		Console.WriteLine("Первоначальные капиталовложения: $" + amount);
+		Console.WriteLine("Норма прибыли: " + rate_of_return);
+		Console.WriteLine("В течение " + years + " лет");
+		for(i = 0; i < years; i++) 
+		{
+			amount = amount + (amount * rate_of_return);
+			Console.WriteLine("Будущая стоимость равна $" + amount);
+		}
+	}
 }
 ```
 Результат выполнения этого кода – это число с большим количеством десятичных разрядов, которые при обычных вычислениях избыточны.
@@ -124,21 +134,23 @@ ch = 88; // ошибка, не выйдет
 ```csharp
 // Продемонстрировать применение типа bool.
 using System;
-class BoolDemo {
-static void Main() {
-bool b;
-b = false;
-Console.WriteLine("b равно " + b);
-b = true;
-Console.WriteLine("b равно " + b);
-// Логическое значение может управлять оператором if.
-if(b) Console.WriteLine("Выполняется.");
-b = false;
-if (b) Console.WriteLine("He выполняется.");
-// Результатом выполнения оператора отношения
-// является логическое значение.
-Console.WriteLine("10 > 9 равно " + (10 > 9));
-}
+class BoolDemo 
+{
+	static void Main() 
+	{
+		bool b;
+		b = false;
+		Console.WriteLine("b равно " + b);
+		b = true;
+		Console.WriteLine("b равно " + b);
+		// Логическое значение может управлять оператором if.
+		if(b) Console.WriteLine("Выполняется.");
+		b = false;
+		if (b) Console.WriteLine("He выполняется.");
+		// Результатом выполнения оператора отношения
+		// является логическое значение.
+		Console.WriteLine("10 > 9 равно " + (10 > 9));
+	}
 }
 ```
 Важно заметить, что при выводе переменной типа bool на экран выводится её значение с большой буквы, а также для управления лигической операцией лостаточно лишь самой переменной этого типа.
@@ -148,7 +160,7 @@ if(b == true) ...
 ```
 ## Преобразование и приведение типов
 Если типы данных полностью совместимы, то преобразование между ими происходит без особых проблем, как в примере:
-```cshrp
+```csharp
 int i;
 float f;
 i = 10;
@@ -163,28 +175,32 @@ f = i; // присвоить целое значение переменной т
 ```charp 
 // Продемонстрировать неявное преобразование типа long в тип double.
 using System;
-class LtoD {
-static void Main() {
-long L;
-double D;
-L = 100123285L;
-D = L;
-Console.WriteLine("L и D: " + L + " " + D);
-}
+class LtoD 
+{
+	static void Main() 
+	{
+		long L;
+		double D;
+		L = 100123285L;
+		D = L;
+		Console.WriteLine("L и D: " + L + " " + D);
+	}
 }
 ```
 Если тип long в тип double перевести можно, то обратное преобразование не может быть автоматическим. 
 ```csharp 
 // *** Эта программа не может быть скомпилирована. ***
 using System;
-class LtoD {
-static void Main() {
-long L;
-double D;
-D = 100123285.0;
-L = D; // Недопустимо!!!
-Console.WriteLine("L и D: " + L + " " + D);
-}
+class LtoD 
+{
+	static void Main() 
+	{
+		long L;
+		double D;
+		D = 100123285.0;
+		L = D; // Недопустимо!!!
+		Console.WriteLine("L и D: " + L + " " + D);
+	}
 }
 ```
 Невозможно преобразование типов float, double, decimal, а  таже числовых bool  и char. Также bool и char несовместимы.
@@ -195,63 +211,65 @@ Console.WriteLine("L и D: " + L + " " + D);
 double х, у;
 z = (int) (х / у)
 ```
- А теперб пример побольше:
+ А теперь пример побольше:
 ```csharp
 // Продемонстрировать приведение типов.
 using System;
-class CastDemo {
-static void Main() {
-double x, y;
-byte b;
-int i;
-char ch;
-uint u;
-short s;
-long 1;
-x = 10.0;
-у = 3.0;
-// Приведение типа double к типу int, дробная часть числа теряется.
-i = (int) (х / у);
-Console.WriteLine("Целочисленный результат деления х / у: " + i);
-Console.WriteLine();
-// Приведение типа int к типу byte без потери данных,
-i = 255;
-b = (byte) i;
-Console.WriteLine("b после присваивания 255: " + b +
-" -- без потери данных.");
-// Приведение типа int к типу byte с потерей данных,
-i = 257;
-b = (byte) i;
-Console.WriteLine("b после присваивания 257: " + b +
-" -- с потерей данных.");
-Console.WriteLine();
-// Приведение типа uint к типу short без потери данных.
-u = 32000;
-s = (short) u;
-Console.WriteLine("s после присваивания 32000: " +
-s + " -- без потери данных.");
-// Приведение типа uint к типу short с потерей данных,
-u = 64000;
-s = (short) u;
-Console.WriteLine("s после присваивания 64000: " +
-s + " -- с потерей данных.");
-Console.WriteLine();
-// Приведение типа long к типу uint без потери данных.
-l = 64000;
-u = (uint) l;
-Console.WriteLine ("u после присваивания 64000: " + u +
-" -- без потери данных.");
-// Приведение типа long к типу uint с потерей данных.
-l = -12;
-u = (uint) l;
-Console.WriteLine("и после присваивания -12: " + u +
-" -- с потерей данных.");
-Console.WriteLine();
-// Приведение типа int к типу char,
-b = 88; // код ASCII символа X
-ch = (char) b;
-Console.WriteLine("ch после присваивания 88: " + ch);
-}
+class CastDemo 
+{
+	static void Main() 
+	{
+		double x, y;
+		byte b;
+		int i;
+		char ch;
+		uint u;
+		short s;
+		long 1;
+		x = 10.0;
+		у = 3.0;
+		// Приведение типа double к типу int, дробная часть числа теряется.
+		i = (int) (х / у);
+		Console.WriteLine("Целочисленный результат деления х / у: " + i);
+		Console.WriteLine();
+		// Приведение типа int к типу byte без потери данных,
+		i = 255;
+		b = (byte) i;
+		Console.WriteLine("b после присваивания 255: " + b +
+		" -- без потери данных.");
+		// Приведение типа int к типу byte с потерей данных,
+		i = 257;
+		b = (byte) i;
+		Console.WriteLine("b после присваивания 257: " + b +
+		" -- с потерей данных.");
+		Console.WriteLine();
+		// Приведение типа uint к типу short без потери данных.
+		u = 32000;
+		s = (short) u;
+		Console.WriteLine("s после присваивания 32000: " +
+		s + " -- без потери данных.");
+		// Приведение типа uint к типу short с потерей данных,
+		u = 64000;
+		s = (short) u;
+		Console.WriteLine("s после присваивания 64000: " +
+		s + " -- с потерей данных.");
+		Console.WriteLine();
+		// Приведение типа long к типу uint без потери данных.
+		l = 64000;
+		u = (uint) l;
+		Console.WriteLine ("u после присваивания 64000: " + u +
+		" -- без потери данных.");
+		// Приведение типа long к типу uint с потерей данных.
+		l = -12;
+		u = (uint) l;
+		Console.WriteLine("и после присваивания -12: " + u +
+		" -- с потерей данных.");
+		Console.WriteLine();
+		// Приведение типа int к типу char,
+		b = 88; // код ASCII символа X
+		ch = (char) b;
+		Console.WriteLine("ch после присваивания 88: " + ch);
+	}
 }
 ```
 

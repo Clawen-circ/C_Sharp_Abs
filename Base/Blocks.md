@@ -3,13 +3,13 @@
 ```csharp
 using System; // точка с запятой указывает на конец оператора
 {
-class Program
-{
-static void Main(string[] args)
-{ // начало блока
-Console.WriteLine("Hello World!"); // оператор
-}// конец блока
-}
+	class Program
+	{
+		static void Main(string[] args)
+		{// начало блока
+			Console.WriteLine("Hello World!"); // оператор
+		}// конец блока
+	}
 }
 ```
 ## Local Links 
