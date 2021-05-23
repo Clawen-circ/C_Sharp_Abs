@@ -8,8 +8,7 @@
 ```csharp
 // Вычислить расстояние от Земли до Солнца в дюймах.
 using System;
-class Inches 
-{
+class Inches {
 	static void Main() 
 	{
 		long inches;
