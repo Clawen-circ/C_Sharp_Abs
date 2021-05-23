@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Base/Amongus Chess.md",
+            "file": "Base/Data Types.md",
             "mode": "source"
           }
         }
@@ -76,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Base/Amongus Chess.md",
+                "file": "Base/Data Types.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Base/Amongus Chess.md"
+                "file": "Base/Data Types.md"
               }
             }
           }
@@ -116,15 +116,15 @@
   },
   "active": "628d82e6efc1a772",
   "lastOpenFiles": [
-    "Base/Amongus Chess.md",
-    "Base/Blocks.md",
-    "Base/Methods.md",
-    "Base/Variables.md",
-    "Base/Operators.md",
     "Base/Data Types.md",
-    "Base/Comments.md",
-    "Base/Циклы.md",
+    "Links/Gamdev.md",
+    "Base/Methods.md",
+    "Base/Operators.md",
+    "Base/Variables.md",
+    "Base/Amongus Chess.md",
     "Base/Инструкция к конспекту.md",
-    "Base/Возможности Вывода.md"
+    "Base/Циклы.md",
+    "Base/Blocks.md",
+    "Base/Comments.md"
   ]
 }

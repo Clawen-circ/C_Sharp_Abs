@@ -6,7 +6,7 @@
 
 
 ## Theme Links 
-[[Gamdev]]
+[[GameDev]]
 
 ## Global Links 
 
