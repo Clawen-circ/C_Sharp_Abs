@@ -46,6 +46,47 @@ string result = (time < 18) ? "Good day." : "Good evening.";
 Console.WriteLine(result); // Good evening.
 ```
 
+## Оператор ветвления switch
+Используйте оператор `switch`, чтобы выбрать один из множества блоков кода для выполнения.
+Синтаксис:
+```csharp
+switch(expression) 
+{
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+    break;
+}
+```
+Вот как это работает:
+- Выражение переключения вычисляется один раз
+- Значение выражения сравнивается со значениями каждого случая.
+- Если есть совпадение, выполняется связанный блок кода.
+### Ключевое слово break и default
+Когда C # достигает ключевого слова `break`, он выходит из блока `switch`.
+Это остановит выполнение большего количества кода и тестирования случаев внутри блока.
+Ключевое слово `default` является необязательным и указывает некоторый код для запуска, если нет совпадения по регистру:
+```csharp
+int day = 4;
+switch (day) 
+{
+  case 6:
+    Console.WriteLine("Today is Saturday.");
+    break;
+  case 7:
+    Console.WriteLine("Today is Sunday.");
+    break;
+  default:
+    Console.WriteLine("Looking forward to the Weekend.");
+    break;
+}
+// Outputs "Looking forward to the Weekend."
+```
 ## Local Links
 [[CSharp]]
 
