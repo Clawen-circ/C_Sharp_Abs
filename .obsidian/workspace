@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Base/Operators.md",
+            "file": "Base/Data Types.md",
             "mode": "source"
           }
         }
@@ -76,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Base/Operators.md",
+                "file": "Base/Data Types.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Base/Operators.md"
+                "file": "Base/Data Types.md"
               }
             }
           }
@@ -116,12 +116,12 @@
   },
   "active": "628d82e6efc1a772",
   "lastOpenFiles": [
+    "Base/Data Types.md",
+    "Base/Циклы.md",
+    "Base/Comments.md",
     "Base/Operators.md",
     "Base/Methods.md",
-    "Base/Циклы.md",
     "Base/Literals.md",
-    "Base/Data Types.md",
-    "Base/Comments.md",
     "Base/Blocks.md",
     "Base/Amongus Chess.md",
     "Base/Инструкция к конспекту.md",
