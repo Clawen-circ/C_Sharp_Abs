@@ -33,10 +33,10 @@ else
 ```
 
 ## Тернарный оператор ?
-Тернарный оператор (?) сокращает запись` if ... else` делая её короче, но усложняет понимание для начинающих.
+Тернарный оператор (?) сокращает запись`if ... else` делая её короче, но усложняет понимание для начинающих.
 Синтаксис:
 ```csharp
-variable = (condition) ? expressionTrue :  expressionFalse;
+variable = (condition) ? expressionTrue : expressionFalse;
 ```
 
 Пример:
