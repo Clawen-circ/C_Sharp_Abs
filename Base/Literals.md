@@ -31,7 +31,9 @@ class StrDemo {
 		Console.WriteLine("Первая строка\nВторая строка\nТретья строка");
 		Console.WriteLine("Один\tДва\tТри");
 		Console.WriteLine("Четыре\tПять\tШесть");
+		
 		// Вставить кавычки.
+		
 		Console.WriteLine("\"3ачем?\", спросил он.");
 	}
 }

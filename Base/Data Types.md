@@ -13,11 +13,14 @@ class Inches {
 	{
 		long inches;
 		long miles;
+		
 		miles = 93000000; // 93 000 000 миль до Солнца
 		// 5 280 футов в миле, 12 дюймов в футе,
+		
 		inches = miles * 5280 * 12;
+		
 		Console.WriteLine("Расстояние до Солнца: " +
-		inches + " дюймов.");
+						inches + " дюймов.");
 	}
 }
 ```
@@ -30,9 +33,13 @@ class Use_byte {
 	{
 		byte x;
 		int sum;
+		
 		sum = 0;
-		for(x = 1; х <= 100; х++) {
+		
+		for(x = 1; х <= 100; х++) 
+		{
 			sum = sum + х;
+			
 			Console.WriteLine("Сумма чисел от 1 до 100 равна " + sum);
 		}
 	}
@@ -50,8 +57,10 @@ class FindRadius {
 	{
 		Double r;
 		Double area;
+		
 		area = 10.0;
 		r = Math.Sqrt(area / 3.1416);
+		
 		Console.WriteLine("Радиус равен " + r);
 	}
 }
@@ -68,10 +77,13 @@ class UseDecimal {
 		decimal price;
 		decimal discount;
 		decimal discounted_price;
+		
 		// Рассчитать цену со скидкой.
 		price = 19.95m;
 		discount = 0.15m; // норма скидки составляет 15%
+		
 		discounted_price = price - ( price * discount);
+		
 		Console.WriteLine("Цена со скидкой: $" + discounted_price);
 	}
 }
@@ -90,14 +102,21 @@ class FutVal {
 		decimal amount;
 		decimal rate_of_return;
 		int years, i;
+		
 		amount = 1000.0M;
 		rate_of_return = 0.07M;
 		years = 10;
+		
 		Console.WriteLine("Первоначальные капиталовложения: $" + amount);
+		
 		Console.WriteLine("Норма прибыли: " + rate_of_return);
+		
 		Console.WriteLine("В течение " + years + " лет");
-		for(i = 0; i < years; i++) {
+		
+		for(i = 0; i < years; i++) 
+		{
 			amount = amount + (amount * rate_of_return);
+			
 			Console.WriteLine("Будущая стоимость равна $" + amount);
 		}
 	}
@@ -123,15 +142,24 @@ class BoolDemo {
 	{
 		bool b;
 		b = false;
+		
 		Console.WriteLine("b равно " + b);
 		b = true;
+		
 		Console.WriteLine("b равно " + b);
+		
 		// Логическое значение может управлять оператором if.
+		
 		if(b) Console.WriteLine("Выполняется.");
+		
 		b = false;
+		
 		if (b) Console.WriteLine("He выполняется.");
+		
 		// Результатом выполнения оператора отношения
+		
 		// является логическое значение.
+		
 		Console.WriteLine("10 > 9 равно " + (10 > 9));
 	}
 }
@@ -165,6 +193,7 @@ class LtoD {
 		double D;
 		L = 100123285L;
 		D = L;
+		
 		Console.WriteLine("L и D: " + L + " " + D);
 	}
 }
@@ -178,8 +207,10 @@ class LtoD {
 	{
 		long L;
 		double D;
+		
 		D = 100123285.0;
 		L = D; // Недопустимо!!!
+		
 		Console.WriteLine("L и D: " + L + " " + D);
 	}
 }
@@ -213,8 +244,11 @@ class PromDemo {
 	static void Main() 
 	{
 		byte b;
+		
 		b = 10;
+		
 		b = (byte) (b * b); // Необходимо приведение типов!!
+		
 		Console.WriteLine("b: "+ b);
 	}
 }
@@ -243,48 +277,74 @@ class CastDemo {
 		uint u;
 		short s;
 		long 1;
+		
 		x = 10.0;
 		у = 3.0;
+		
 		// Приведение типа double к типу int, дробная часть числа теряется.
+		
 		i = (int) (х / у);
+		
 		Console.WriteLine("Целочисленный результат деления х / у: " + i);
+		
 		Console.WriteLine();
+		
 		// Приведение типа int к типу byte без потери данных,
+		
 		i = 255;
 		b = (byte) i;
 		Console.WriteLine("b после присваивания 255: " + b +
-		" -- без потери данных.");
+						" -- без потери данных.");
+						
 		// Приведение типа int к типу byte с потерей данных,
+		
 		i = 257;
 		b = (byte) i;
+		
 		Console.WriteLine("b после присваивания 257: " + b +
-		" -- с потерей данных.");
+						" -- с потерей данных.");
+						
 		Console.WriteLine();
+		
 		// Приведение типа uint к типу short без потери данных.
 		u = 32000;
 		s = (short) u;
 		Console.WriteLine("s после присваивания 32000: " +
-		s + " -- без потери данных.");
+						s + " -- без потери данных.");
+						
 		// Приведение типа uint к типу short с потерей данных,
+		
 		u = 64000;
 		s = (short) u;
+		
 		Console.WriteLine("s после присваивания 64000: " +
-		s + " -- с потерей данных.");
+						s + " -- с потерей данных.");
+						
 		Console.WriteLine();
+		
 		// Приведение типа long к типу uint без потери данных.
+		
 		l = 64000;
 		u = (uint) l;
+		
 		Console.WriteLine ("u после присваивания 64000: " + u +
-		" -- без потери данных.");
+						" -- без потери данных.");
+						
 		// Приведение типа long к типу uint с потерей данных.
+		
 		l = -12;
 		u = (uint) l;
+		
 		Console.WriteLine("и после присваивания -12: " + u +
-		" -- с потерей данных.");
+						" -- с потерей данных.");
+		
 		Console.WriteLine();
+		
 		// Приведение типа int к типу char,
+		
 		b = 88; // код ASCII символа X
 		ch = (char) b;
+		
 		Console.WriteLine("ch после присваивания 88: " + ch);
 	}
 }
