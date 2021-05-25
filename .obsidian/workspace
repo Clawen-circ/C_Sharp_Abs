@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Base/Циклы.md",
+            "file": "Base/Classes.md",
             "mode": "source"
           }
         }
@@ -76,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Base/Циклы.md",
+                "file": "Base/Classes.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Base/Циклы.md"
+                "file": "Base/Classes.md"
               }
             }
           }
@@ -112,19 +112,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228
+    "width": 225
   },
   "active": "628d82e6efc1a772",
   "lastOpenFiles": [
-    "Base/Циклы.md",
+    "Base/Classes.md",
     "Base/Operators.md",
-    "Base/Variables.md",
     "Base/Methods.md",
-    "Base/Literals.md",
     "Base/Data Types.md",
+    "Base/Literals.md",
     "Base/Comments.md",
     "Base/Blocks.md",
-    "Base/Amongus Chess.md",
-    "Base/Массивы.md"
+    "Base/Циклы.md",
+    "Base/Variables.md",
+    "Base/Amongus Chess.md"
   ]
 }
